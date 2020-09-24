@@ -1,0 +1,36 @@
+.gif{
+    background-color: rgb(59, 51, 92);
+    margin: 1rem;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.gif img{
+    object-fit: cover;
+    max-width: 100%;
+}
+.gif-info{
+    display: flex;
+    padding: 1rem;
+}
+.gif-info h3{
+    margin: 0;
+    color: #fafafa;
+}
+.gif-fav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    background-color:  rgb(59, 51, 92);
+    display: flex;
+    justify-content: center;
+    color: #ff1616;
+}
+.gif:hover .gif-fav{
+    transform: translateY(0%);
+}
